@@ -1,2 +1,5 @@
-<h1>Hello Bernadette</h1>
+<h1>Welcome!</h1>
 <h2>Do you need music?</h2>
+<label for="search-box">Enter User ID: </label>
+<input #searchBox id="search-box"/>
+<button (click)="search(searchBox.value)">Find Me!</button>
