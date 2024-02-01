@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap')
+
+$bg-gray: #212121
+$bg-black: #191414
+$bg-green: #1DB954
+$bg-white: #FFFFFF
+$global-font-family: 'Montserrat', sans-serif
+
+main
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-template-rows: 40% 60%
+    grid-template-areas: "banner banner banner" "tracks artists playlists"
+    background-color: $bg-black
+    font-family: $global-font-family
+    color: $bg-white
+
+div
+    width: 100%
+
+.container
+    border: 1px solid transparent
+    background-color: $bg-gray
+    border-radius: 10px
+    height: 100%
+
+.banner
+    grid-area: banner
+    padding: 20px
+    padding-bottom: 0
+    box-sizing: border-box
+    height: 40vh
+    
+.tracks
+    grid-area: tracks
+    height: 60vh
+    padding: 20px
+    box-sizing: border-box
+
+.artists
+    grid-area: artists
+    height: 60vh
+    padding: 20px 0
+    box-sizing: border-box
+
+.playlists
+    grid-area: playlists
+    height: 60vh
+    padding: 20px
+    box-sizing: border-box
